@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  border: 1px solid #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  height: 122px;
+  width: 142px;
+  position: relative;
+  z-index: 100;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.grid div:not(.hidden) {
+  border: 1px solid #aaa;
+}
+
+#p1Chip,
+#p2Chip {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.help {
+  margin-top: 20px;
+  font-size: large;
+  color: purple;
+}
+
+#result {
+  background-color: yellow;
+}
